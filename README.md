@@ -7,7 +7,7 @@ A simple Express typescript starter project to bootstrap all your Express Backen
 Clone the project
 
 ```bash
-git clone https://github.com/Harrylever/express-typescript-starter.git
+https://github.com/TCD-Community/express-typescript-starter.git
 ```
 
 Go to project directory
