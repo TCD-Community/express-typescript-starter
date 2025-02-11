@@ -1,5 +1,4 @@
 import express from 'express';
-import bodyParser from 'body-parser';
 import cors from 'cors';
 import morgan from 'morgan';
 import compression from 'compression';
@@ -7,7 +6,8 @@ import helmet from 'helmet';
 import logger from '../config/logger';
 
 const middleware = (app: express.Application) => {
-	app.use(bodyParser.json());
+	app.use(express.json());
+	app.use(express.urlencoded({ extended: true }));
 	app.use(
 		cors({
 			origin: '*',
